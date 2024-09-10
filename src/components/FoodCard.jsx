@@ -26,7 +26,7 @@ const FoodCard = ({id, name, price, desc, rating, img, handleToast }) => {
                     </span>
                     <button 
                     onClick={()=>{
-                        dispatch(addToCart({id,name,price,rating, price,img, qty:1}));
+                        dispatch(addToCart({id,name,price,rating,img, qty:1}));
                         handleToast(name);
                     }}
                     className='p-1 text-white bg-green-500 hover:bg-green-600 rounded-lg text-sm'>
